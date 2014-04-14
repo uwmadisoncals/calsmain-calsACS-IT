@@ -15,8 +15,8 @@ module.exports = function(grunt) {
         style: 'compressed'
       },
       files: {                         // Dictionary of files
-        'main-child.css': 'main-child.scss',      // 'destination': 'source'
-        'mobile-child.css': 'mobile-child.scss'
+        'css/main-child/main-child.css': 'css/main-child/main-child.scss',      // 'destination': 'source'
+        'css/mobile-child/mobile-child.css': 'css/mobile-child/mobile-child.scss'
       }
     }
   },
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
       separator: ' ',
     },
     dist: {
-      src: ['main-child.css', 'mobile-child.css'],
-      dest: 'master-child.css',
+      src: ['css/main-child/main-child.css', 'css/mobile-child/mobile-child.css'],
+      dest: 'css/master-child/master-child.css',
     },
   },
   watch: {
