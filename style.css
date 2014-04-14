@@ -1,0 +1,11 @@
+/*
+Theme Name:     cals ACS/IT
+Theme URI:      http://cals.wisc.edu/developers
+Description:    CALS ACS/IT theme as the child-theme of calsmain2013
+Author:         Al Nemec & Daniel Dropik
+Author URI:     http://www.wisc.edu/directories/person.php?name=ALBERT%20M%20NEMEC
+Template:       calsmain2013
+Version:        0.1.0
+*/
+
+@import url("../calsmain2013/style.css");
