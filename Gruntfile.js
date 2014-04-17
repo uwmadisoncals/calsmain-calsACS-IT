@@ -29,6 +29,24 @@ module.exports = function(grunt) {
       dest: 'css/master-child/master-child.css',
     },
   },
+  markdown:{
+    all:{
+      files:[
+        {
+          expand:true,
+          cwd:'./',
+          src:'md/*.md',
+          dest:'./',
+          ext:'.html'
+        }
+      ],
+      options: {
+        markdownOptions: {
+          gfm:true
+        }
+      }
+    }
+  },
   watch: {
 	  scripts: {
 	    files: ['js/*.js'],
@@ -37,6 +55,14 @@ module.exports = function(grunt) {
 	      livereload: true,
 	    },
 	  },
+    mardown:{
+      files: ['md/*.md'],
+      tasks:['markdown'],
+      options:{
+        livereload:true,
+      },
+
+    },
 	  css: {
 	    files: '**/*.scss',
 	    tasks: ['sass','concat'],
@@ -69,6 +95,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-markdown');
   
 
   // Default task(s).
@@ -77,7 +104,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['concat']);
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('default', ['imagemin']);
-  
- 
+  grunt.registerTask('default', ['markdown']);
 
 };
