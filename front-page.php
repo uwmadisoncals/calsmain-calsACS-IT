@@ -17,7 +17,9 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id="box-c" class="box bottomShade span-33"><p>this is front-page.php.</p>	
+				<div id="box-c" class="box bottomShade span-33">
+					<div id="spprt-title"><h2>Support</h2></div>
+					<div id="spprt-content"><p>Support Content here</p></div>	
 				</div>
 			</div>
 		</div>
