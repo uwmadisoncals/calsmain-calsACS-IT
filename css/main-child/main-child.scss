@@ -78,3 +78,63 @@ html.csstransforms body#calsblack.home div.mobileScroll div#page.hfeed div#main 
     text-align: left;
     text-transform: none;
 }
+
+.box.span-66{
+    width: 66.6%;
+    margin-right: 1%;
+    float:left;
+}
+
+.box-400.span-66{
+    width: 64.6%;
+    margin-right: 2%;
+    float:left;
+}
+
+.row .box-400 {
+    height: 420px;
+    background: rgba(255,255,255,0.6);   
+    position: relative;
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    min-height: 1em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+div.row div#FS-title{
+       margin-bottom:3px;
+       margin-top:4px;
+       text-align: center;
+        -moz-box-shadow: 0px 5px 5px -6px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0px 5px 5px -6px rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 5px -6px rgba(0,0,0,0.3);
+        h2{
+            line-height:2em;
+            font-size: 22px;
+        }
+    }
+
+
+div.row #box-b{
+    margin-bottom: 10px;
+    margin-top:-1em;
+    background: rgba(255,255,255,0.6);
+    div#news-title{
+        h2{
+            font-size: 22px;
+            position:inherit;
+            padding-left:4px;
+            padding-top:4px;
+
+        }
+    }
+}
+
+div.row #box-c{
+    margin-top:10px;
+    background: rgba(255,255,255,0.6);
+}
