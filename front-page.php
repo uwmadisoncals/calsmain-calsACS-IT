@@ -5,11 +5,40 @@
 		<div id="content">
 			<div class="row">
 				<div id="box-a" class="box-400 bottomShade span-66">
-					<div id="FS-title"><h2>Featured service</h2></div>
-					<div id="FS-image"><img src="http://acs.calsmain.localhost/files/2014/04/ga.jpg" alt="noen"></div>
-					<div id="FS-content"><p>featured service here</p></div>
-				</div>
-			</div>
+					<div id="FS-title"><h2>Featured services</h2></div>
+						<div id="FS-row-group">
+							<div id="FS-row1" class="grid-pad FS-grid-row">
+								<div class="col-3-8">
+									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+									<div class="FS-caption">Web Hosting</div>
+								</div>
+								<div class="col-3-8">
+									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+									<div class="FS-caption">Web Hosting</div>
+								</div>
+								<!--<div class="col-3-8">
+									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+									<div class="FS-caption">Web Hosting</div>
+								</div>
+								<div class="col-3-8">
+									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+									<div class="FS-caption">Web Hosting</div>
+								</div> -->
+							</div>
+							<div id="FS-row2" class="FS-grid-row grid-pad ">
+								<div class="col-3-8">
+										<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+										<div class="FS-caption">Web Hosting</div>
+								</div>
+								<div class="col-3-8">
+										<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+										<div class="FS-caption">Web Hosting</div>
+								</div>
+							</div>
+
+					</div> <!--END #FS-row-group -->
+				</div> <!--END .box-a-->
+			</div><!--END .row-->
 			<div class="row">
 				<div id="box-b" class="box bottomShade span-33">
 					<div id="news-title"><h2>News</h2></div>
