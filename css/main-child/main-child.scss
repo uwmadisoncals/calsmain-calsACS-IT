@@ -108,6 +108,9 @@ html.csstransforms body#calsblack.home div.mobileScroll div#page.hfeed div#main 
 }
 
 div.row div#FS-title{
+        position:absolute;
+        width:100%;
+        top:0;
        margin-bottom:3px;
        margin-top:4px;
        text-align: center;
@@ -199,6 +202,9 @@ div#FS-row-group{
 .col-3-8{
     width:37.5%;
 }
+.col-1{
+    width:100%;
+}
 
 
 div.FS-grid-row#FS-row1 > div.col-3-8:nth-of-type(1){
@@ -255,10 +261,54 @@ div.FS-grid-row#FS-row2 > div.col-3-8:nth-of-type(2){
 
 //For screens, everything BETWEEN 0 AND 500
 @media only screen and (min-width : 0px) and (max-width : 500px) {
+      div.row #box-b{
+        margin-top:10px;
+    }
+    div.row #box-a{
+        margin-left:1%;
+        width:98%;
+    }
+    div.row #box-c{
+        margin-top:0;
+    }
+    .grid-pad{
+        padding:2% 0 5% 0%;
+    }
+    .col-3-8{
+        width:100%;
+    }
+    div.FS-grid-row#FS-row2 > div.col-3-8:nth-of-type(1){
+    margin-left:0;
+    }
+
+    div.FS-grid-row#FS-row2 > div.col-3-8:nth-of-type(2){
+        margin-left:0;
+    }
+    div#box-a div.col-3-8 img{
+        margin:0 45%;
+        width:auto;
+    }
+    div#box-a div.FS-caption h4{
+        margin:0 45%;
+        width:100%;
+    }
 }
 
 //For screens, everything BETWEEN 500 AND 640
 @media only screen and (min-width : 500px) and (max-width : 640px) {
+    div.row #box-b{
+        margin-top:10px;
+    }
+    div.row #box-a{
+        margin-left:1%;
+        width:98%;
+    }
+    div.row #box-c{
+        margin-top:0;
+    }
+    .grid-pad{
+        padding:2% 0 5% 17%;
+    }
 }
 
 //For screens, everything BETWEEN 640 AND 960
