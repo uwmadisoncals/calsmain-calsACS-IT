@@ -17,14 +17,6 @@
 									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
 									<div class="FS-caption"><h4>Web Hosting</h4></div>
 								</div>
-								<!--<div class="col-3-8">
-									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
-									<div class="FS-caption">Web Hosting</div>
-								</div>
-								<div class="col-3-8">
-									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
-									<div class="FS-caption">Web Hosting</div>
-								</div> -->
 							</div><!--END #FS-row1 -->
 							<div id="FS-row2" class="FS-grid-row grid-pad ">
 								<div class="col-3-8">
