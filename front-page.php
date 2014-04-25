@@ -10,22 +10,22 @@
 						<div id="FS-row-group">
 							<div id="FS-row1" class="grid-pad FS-grid-row">
 								<div class="col-3-8">
-									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
-									<div class="FS-caption"><h4>Web Hosting</h4></div>
+									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/1398457810_42.png" class="responsive-image" alt="web-folder"></div>
+									<div class="FS-caption"><h4>Desktop Support</h4></div>
 								</div>
 								<div class="col-3-8">
-									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
-									<div class="FS-caption"><h4>Web Hosting</h4></div>
+									<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/1398457691_Install1.png" alt="web-folder"></div>
+									<div class="FS-caption"><h4>Software Licensing</h4></div>
 								</div>
 							</div><!--END #FS-row1 -->
 							<div id="FS-row2" class="FS-grid-row grid-pad ">
 								<div class="col-3-8">
-										<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
+										<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/1398457588_dedicated_server.png" alt="web-folder"></div>
 										<div class="FS-caption"><h4>Web Hosting</h4></div>
 								</div>
 								<div class="col-3-8">
-										<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/Folder_Web.png" alt="web-folder"></div>
-										<div class="FS-caption"><h4>Web Hosting</h4></div>
+										<div class="FS-img"><img src="http://acs.calsmain.localhost/files/2014/04/1398457286_tools.png" alt="web-folder"></div>
+										<div class="FS-caption"><h4>Equipment Rental</h4></div>
 								</div>
 							</div><!-- END #FS-row2 -->
 						</div> <!--END #FS-row-group -->
