@@ -23,15 +23,24 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'calsboilerplate_underscores' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'calsboilerplate_underscores' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<div class="row">
+
+			<div class="span-50">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</div>
+			</div>
+
+			<div class="span-50">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Primary Menu', 'calsboilerplate_underscores' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				</nav><!-- #site-navigation -->
+			</div>
 	</header><!-- #masthead -->
+
+	</div>
 
 	<div id="content" class="site-content">

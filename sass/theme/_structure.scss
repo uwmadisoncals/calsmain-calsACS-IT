@@ -1,0 +1,59 @@
+#primary, #masthead {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#page {
+  font-family: "Open Sans", sans-serif;
+  background: $primaryHeaderBg;
+  padding: 2em;
+  color: $white;
+
+  .site-branding {
+    h1 {
+      font-size: 0px;
+      text-indent: -100000px;
+
+      a {
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        height: 100px;
+        background: url("../../../img/calsitlogo.svg") no-repeat;
+        background-size: 100%;
+        position: relative;
+
+      }
+    }
+
+    h2 {
+      position: absolute;
+      top: -10000px;
+    }
+  }
+
+  .main-navigation {
+
+    margin-top: 1.3em;
+
+    li {
+
+      margin-left: 1em;
+
+        a {
+          color: $white;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 0.9em;
+        }
+    }
+
+
+  }
+
+}
+
+#content {
+  background: $primaryHeaderBg;
+}
