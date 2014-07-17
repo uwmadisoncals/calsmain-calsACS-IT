@@ -6,37 +6,30 @@
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
  * different template.
- * @package WordPress
- * @subpackage CALSv1
- * @since CALS 1.0
+ *
+ * @package CALSboilerplate_underscores
  */
 
 get_header(); ?>
 
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-	<div id="main">
+			<?php while ( have_posts() ) : the_post(); ?>
 
-		<div id="primary">
-		
-			<div id="content" role="main">
+				<?php get_template_part( 'content', 'page' ); ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || '0' != get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
+			<?php endwhile; // end of the loop. ?>
 
-					<?php get_template_part('nav_menu', 'explore');?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-					<?php //comments_template( '', true ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-				
-			</div><!-- #content -->
-			<?php get_sidebar(); ?>
-			<div class="clear"></div>
-			
-		</div><!-- #primary -->
-
-	</div>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-</div>

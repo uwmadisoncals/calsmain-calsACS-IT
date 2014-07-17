@@ -1,42 +1,92 @@
-// Include gulp
-var gulp = require('gulp'); 
+// Load plugins
+var gulp = require('gulp'),
+    sass = require('gulp-ruby-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    minifycss = require('gulp-minify-css'),
+    jshint = require('gulp-jshint'),
+    uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin'),
+    rename = require('gulp-rename'),
+    clean = require('gulp-clean'),
+    concat = require('gulp-concat'),
+    notify = require('gulp-notify'),
+    cache = require('gulp-cache'),
+    newer = require('gulp-newer'),
+    livereload = require('gulp-livereload'),
+    lr = require('tiny-lr'),
+    server = lr();
 
-// Include Our Plugins
-var jshint = require('gulp-jshint');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-
-// Lint Task
-gulp.task('lint', function() {
-    return gulp.src('js/build/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
+// Styles
+gulp.task('styles', function() {
+  return gulp.src('sass/**/*.scss')
+    .pipe(sass({ style: 'expanded', }))
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(gulp.dest('dist/styles/unminified'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(minifycss())
+    .pipe(livereload(server))
+    .pipe(gulp.dest('dist/styles/minified'))
+    .pipe(notify({ message: 'Styles task complete' }));
 });
 
-// Compile Our Sass
-gulp.task('sass', function() {
-    return gulp.src(['css/main-child/*.scss','css/mobile-child/*.scss'])
-        .pipe(sass())
-        .pipe(gulp.dest('css/master-child.css'));
-});
 
-// Concatenate & Minify JS
+// Scripts
 gulp.task('scripts', function() {
-    return gulp.src(['js/jquery-1.7.1.min.js','js/jquery.ui.js','js/jquery.iosslider.js','js/jquery.isotope.min.js','js/jquery-css-transform.js','js/jquery-rotate.js','js/browserdetect.js','js/mainactions.js','js/min/gsapi.min.js','js/blurobjs.js','library/scripts/vallenato.js','js/highcharts.js','js/calsACS-IT_custom.js'])
-        .pipe(concat('mainactions.js'))
-        .pipe(gulp.dest('js/build/'))
-        .pipe(rename('mainactions.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('js/build'));
+  return gulp.src(['./js/CALSboilerplate_underscores_custom.js'])
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('default'))
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dist/scripts'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(uglify())
+    .pipe(livereload(server))
+    .pipe(gulp.dest('dist/scripts'))
+    .pipe(notify({ message: 'Scripts task complete' }));
 });
 
-// Watch Files For Changes
+// Images
+gulp.task('images', function() {
+  return gulp.src('img/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(livereload(server))
+    .pipe(gulp.dest('dist/images'))
+    .pipe(notify({ message: 'Images task complete' }));
+});
+
+
+
+// Clean
+gulp.task('clean', function() {
+  return gulp.src(['dist/styles', 'dist/scripts', 'dist/images'], {read: false})
+    .pipe(clean());
+});
+
+// Default task
+gulp.task('default', ['clean'], function() {
+    gulp.start('styles', 'scripts', 'images');
+});
+
+// Watch
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/*.scss', ['sass']);
-});
 
-// Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+  // Listen on port 35729
+  server.listen(35729, function (err) {
+    if (err) {
+      return console.log(err)
+    };
+
+    // Watch .scss files
+    gulp.watch('sass/**/*.scss', ['styles']);
+
+    // Watch .js files
+    gulp.watch('js/**/*.js', ['scripts']);
+
+    // Watch image files
+    gulp.watch('img/**/*', ['images']);
+
+
+
+
+  });
+
+});

@@ -1,12 +1,48 @@
 /*
-Theme Name:     cals ACS/IT
-Theme URI:      http://cals.wisc.edu/developers
-Description:    CALS ACS/IT theme as the child-theme of calsmain2013
-Author:         Al Nemec & Daniel Dropik
-Author URI:     http://www.wisc.edu/directories/person.php?name=ALBERT%20M%20NEMEC
-Template:       calsmain2013
-Version:        0.1.0
+Theme Name: CALS IT/ACS
+Theme URI: http://underscores.me/
+Author: CALS IT Development
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: calsboilerplate_underscores
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ CALSboilerplate_underscores is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
 */
 
-@import url("../calsmain2013/style.css");
-@import url("css/master-child/master-child.css");
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+--------------------------------------------------------------*/
+@import url("dist/styles/minified/master.min.css");
