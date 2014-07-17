@@ -4,8 +4,19 @@
 }
 
 #page {
+  background: linear-gradient(to bottom, rgba(150,0,1,.8) 50%,rgba(150,0,1,0) 100%);
+}
+
+.headerContainer {
+
+  position: relative;
+  background: $primaryHeaderBg url("../../../dist/images/equipmentcollection2.svg") no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+}
+
+#page {
   font-family: "Open Sans", sans-serif;
-  background: $primaryHeaderBg;
   padding: 2em;
   color: $white;
 
@@ -36,6 +47,10 @@
 
     margin-top: 1.3em;
 
+    .menu-primary-menu-container {
+      float: right;
+    }
+
     li {
 
       margin-left: 1em;
@@ -54,6 +69,33 @@
 
 }
 
-#content {
-  background: $primaryHeaderBg;
+.sideBarNav {
+  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+  height: 100%;
+  z-index:50;
+  background: $navbg;
+  color: $navtextcolor;
+  padding: 2em;
+
+  nav {
+
+    li {
+      float: none;
+
+      a {
+        color: $navtextcolor;
+        font-weight: 300;
+        font-size: 1.5em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+
 }
