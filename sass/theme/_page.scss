@@ -1,0 +1,38 @@
+body.page div.site-content{
+	background-color:$offwhite;
+	div#primary{
+		//background-color:lightsteelblue; //delete
+		max-width: 1140px;
+		main{
+			//background-color:lightsalmon;
+			max-width:inherit;
+			margin: 0 auto;
+			padding: 0% 2% 1% 2%;
+			article {
+				a.breadcrumb{
+					margin: 48px 48px 0px 0px;
+					display:inline-block;
+				}
+				header h1{
+					margin:48px;
+					font-weight: 500;
+				}
+				div.entry-content p{
+					margin: 0;
+					padding:48px;
+					padding-right:360px;
+					background-color:tan;
+					margin-bottom:48px;
+					background-color:$white;
+					border:1px solid #f4f5f6;
+					border-radius:3px;
+					font-size:1.2rem;
+					line-height: 2em;
+					-webkit-font-smoothing: antialiased;
+					text-rendering: optimizelegibility;
+					word-spacing: .2rem;
+				}
+			}
+		}
+	}
+}
