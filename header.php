@@ -20,6 +20,15 @@
 
 <body <?php body_class(); ?>>
 
+		<div class="sideBarNav">
+			<a href="#" class="sideBarClose"><?php include("dist/images/closebutton.svg"); ?> Close Menu</a>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav>
+		</div>
+		<div class="siteWrapperOverlay"></div>
+	<div class="siteWrapper">
+
 	<div class="headerContainer">
 
 		<div id="page" class="hfeed site">
@@ -57,11 +66,7 @@ if ( is_front_page() ) { ?>
 
 	</div>
 
-	<div class="sideBarNav">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav>
-	</div>
+
 
 
 	<div id="content" class="site-content">

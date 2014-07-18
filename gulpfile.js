@@ -53,7 +53,7 @@ gulp.task('debug', function() {
 // Images
 gulp.task('images', function() {
   return gulp.src('img/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(cache(imagemin({ svgoPlugins: [{removeViewBox: false}], progressive: true })))
     .pipe(livereload(server))
     .pipe(gulp.dest('dist/images'))
     .pipe(notify({ message: 'Images task complete' }));
