@@ -2,10 +2,10 @@
   "name": "CALSboilerplate_underscores",
   "version": "0.1.0",
   "devDependencies": {
-    "gulp": "^3.8.6",
+    "gulp": "~3.8.5",
     "gulp-ruby-sass": "^0.4.2",
     "gulp-rename": "^1.2.0",
-    "tiny-lr": "0.0.9",
+    "tiny-lr": "0.0.5",
     "gulp-concat": "^2.2.0",
     "gulp-livereload": "^1.2.0",
     "gulp-clean": "^0.2.4",
@@ -17,6 +17,6 @@
     "gulp-jshint": "^1.5.3",
     "gulp-imagemin": "^0.2.0",
     "gulp-newer": "^0.3.0",
-    "connect-livereload": "^0.4.0"
+    "gulp-sass": "^0.7.2"
   }
 }
