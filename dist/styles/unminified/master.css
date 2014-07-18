@@ -1127,3 +1127,22 @@ body.page.page-template-default div.site-content {
     padding-right: 180px; } }
 
 @media only screen and (min-width: 1140px) { }
+
+html body.page footer#colophon.site-footer {
+  width: 100%;
+  background-color: #3E3938;
+  min-height: 300px; }
+  html body.page footer#colophon.site-footer div.darkband {
+    width: 100%;
+    height: 50px;
+    background-color: #CBC8B7; }
+  html body.page footer#colophon.site-footer div.contactInfo {
+    width: 60%;
+    float: left; }
+    html body.page footer#colophon.site-footer div.contactInfo div.uwaddress span, html body.page footer#colophon.site-footer div.contactInfo div.uwaddress a {
+      color: white; }
+    html body.page footer#colophon.site-footer div.contactInfo div.uwaddress h3 {
+      color: white; }
+  html body.page footer#colophon.site-footer div.support {
+    width: 35%;
+    float: right; }
