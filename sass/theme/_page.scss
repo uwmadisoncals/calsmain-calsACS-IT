@@ -36,3 +36,33 @@ body.page div.site-content{
 		}
 	}
 }
+
+.breadcrumb {
+
+	margin-top: 3em;
+	font-size: 0.8em;
+	font-family: "Raleway";
+
+	.breadcrumb_item {
+		float: left;
+		padding-right: 0.4em;
+
+		a {
+			text-decoration: none;
+			color: rgba(0,0,0,.6);
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.nav_arrow {
+			svg {
+				height: 1em;
+				width: 1em;
+			}
+		}
+
+	}
+
+}
