@@ -891,7 +891,8 @@ p {
     font-weight: 300;
     font-family: "Raleway", sans-serif;
     padding-top: 1.2em;
-    padding-bottom: 1.2em; }
+    padding-bottom: 1.2em;
+    margin-top: 2em; }
   .homePageFeature h2 {
     position: relative;
     z-index: 5;
@@ -919,3 +920,23 @@ p {
     .homePageFeature .equipment img {
       width: 100%;
       height: auto; }
+
+.homeSubFeatures > div {
+  padding: 5em; }
+  .homeSubFeatures > div div.icon {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 1.4em; }
+    .homeSubFeatures > div div.icon img {
+      width: 100%;
+      height: auto; }
+  .homeSubFeatures > div h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500; }
+  .homeSubFeatures > div p {
+    text-align: justify;
+    line-height: 1.6;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100; }

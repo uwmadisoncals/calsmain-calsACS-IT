@@ -11,6 +11,7 @@
     font-family: "Raleway",sans-serif;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
+    margin-top: 2em;
   }
 
   h2 {
@@ -48,4 +49,33 @@
     }
   }
 
+}
+
+.homeSubFeatures>div {
+    padding: 5em;
+
+    div.icon {
+      margin: 0 auto;
+      width: 50%;
+      margin-bottom: 1.4em;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1.0em;
+      font-family: "Raleway",sans-serif;
+      font-weight: 500;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+      font-family: "Raleway",sans-serif;
+      font-weight: 100;
+    }
 }
