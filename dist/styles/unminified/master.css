@@ -865,16 +865,56 @@ p {
         font-size: 0.9em; }
 
 .sideBarNav {
-  display: none;
+  display: block;
   position: fixed;
   top: 0px;
-  right: 0px;
+  right: -300px;
   width: 300px;
   height: 100%;
   z-index: 50;
   background: #333333;
   color: rgba(255, 255, 255, 0.8);
-  padding: 2em; }
+  padding: 2em;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .sideBarNav a.sideBarClose {
+    color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .sideBarNav a.sideBarClose svg {
+      width: 1.8em;
+      height: 1.8em;
+      float: left;
+      margin-top: -8px;
+      margin-right: 0.4em; }
+      .sideBarNav a.sideBarClose svg path, .sideBarNav a.sideBarClose svg rect, .sideBarNav a.sideBarClose svg circle, .sideBarNav a.sideBarClose svg polygon {
+        fill: rgba(255, 255, 255, 0.4);
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+  .sideBarNav a.sideBarClose:hover {
+    color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif; }
+    .sideBarNav a.sideBarClose:hover svg {
+      width: 1.8em;
+      height: 1.8em;
+      float: left;
+      margin-top: -8px;
+      margin-right: 0.4em; }
+      .sideBarNav a.sideBarClose:hover svg path, .sideBarNav a.sideBarClose:hover svg rect, .sideBarNav a.sideBarClose:hover svg circle, .sideBarNav a.sideBarClose:hover svg polygon {
+        fill: rgba(255, 255, 255, 0.8); }
   .sideBarNav nav li {
     float: none; }
     .sideBarNav nav li a {
@@ -887,7 +927,33 @@ p {
       -webkit-font-smoothing: antialiased; }
 
 .sideBarNav.navVisible {
-  display: block; }
+  display: block;
+  -webkit-transform: translate3d(-300px, 0px, 0px);
+  transform: translate3d(-300px, 0px, 0px); }
+
+.siteWrapper {
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+  .siteWrapper .siteWrapperOverlay {
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 0%;
+    width: 0%;
+    z-index: 40;
+    -webkit-transition: background 0.4s;
+    transition: background 0.4s; }
+
+.siteWrapper.navVisible {
+  -webkit-transform: translate3d(-40px, 0px, 0px);
+  transform: translate3d(-40px, 0px, 0px);
+  -webkit-filter: blur(4px);
+  filter: blur(4px); }
+  .siteWrapper.navVisible .siteWrapperOverlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%; }
 
 .menuTrigger, .menuTrigger:visited {
   float: right;

@@ -3,6 +3,8 @@
   margin: 0 auto;
 }
 
+
+
 #page {
   background: linear-gradient(to bottom, rgba(150,0,1,.8) 50%,rgba(150,0,1,0) 100%);
 }
@@ -77,17 +79,81 @@
 
 }
 
+body {
+
+
+
+}
+
+
+
 .sideBarNav {
-  display: none;
+  display: block;
+
   position: fixed;
   top: 0px;
-  right: 0px;
+  right: -300px;
   width: 300px;
   height: 100%;
   z-index:50;
   background: $navbg;
   color: $navtextcolor;
   padding: 2em;
+  transform: translate3d(0px,0px,0px);
+    transition: all 0.4s ease;
+
+
+  a.sideBarClose {
+    color: rgba(255,255,255,0.4);
+    outline: none;
+    display: block;
+
+    height: 50px;
+    text-decoration: none;
+    font-family: "Raleway",sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.3s;
+
+    svg {
+      width: 1.8em;
+      height: 1.8em;
+      float: left;
+      margin-top: -8px;
+      margin-right: 0.4em;
+
+      path, rect, circle, polygon {
+        fill: rgba(255,255,255,0.4);
+        transition: 0.3s;
+
+      }
+    }
+
+  }
+
+  a.sideBarClose:hover {
+    color: rgba(255,255,255,0.8);
+    outline: none;
+    display: block;
+
+    height: 50px;
+    text-decoration: none;
+    font-family: "Raleway",sans-serif;
+
+
+    svg {
+      width: 1.8em;
+      height: 1.8em;
+      float: left;
+      margin-top: -8px;
+      margin-right: 0.4em;
+      path, rect, circle, polygon {
+        fill: rgba(255,255,255,0.8);
+
+      }
+    }
+
+  }
 
   nav {
 
@@ -110,6 +176,43 @@
 
 .sideBarNav.navVisible {
   display: block;
+
+transform: translate3d(-300px,0px,0px);
+
+}
+
+
+
+.siteWrapper {
+  transition: 0.4s;
+
+
+  .siteWrapperOverlay {
+    background: rgba(0,0,0,0);
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 0%;
+    width: 0%;
+    z-index:40;
+    transition: background 0.4s;
+  }
+
+}
+
+.siteWrapper.navVisible {
+  transform: translate3d(-40px,0px,0px);
+  filter: blur(4px);
+
+
+  .siteWrapperOverlay {
+    background: rgba(0,0,0,0.3);
+
+    height: 100%;
+    width: 100%;
+
+
+  }
 }
 
 .menuTrigger, .menuTrigger:visited {
