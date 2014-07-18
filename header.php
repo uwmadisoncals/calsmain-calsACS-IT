@@ -36,6 +36,9 @@
 						</div>
 					</div>
 
+					<div class="span-50">
+						<a href="#" class="menuTrigger"><?php include("dist/images/menuicon.svg"); ?> Menu</a>
+					</div>
 
 			</header><!-- #masthead -->
 

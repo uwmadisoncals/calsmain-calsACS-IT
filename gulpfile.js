@@ -32,9 +32,7 @@ gulp.task('styles', function() {
 
 // Scripts
 gulp.task('scripts', function() {
-  return gulp.src(['./js/CALSboilerplate_underscores_custom.js'])
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/CALSboilerplate_underscores_custom.js','./js/parallax.js','./js/menu.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
@@ -42,6 +40,14 @@ gulp.task('scripts', function() {
     .pipe(livereload(server))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(notify({ message: 'Scripts task complete' }));
+});
+
+// Script Debug
+gulp.task('debug', function() {
+  return gulp.src(['./js/parallax.js'])
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('default'))
+    .pipe(notify({ message: 'Debug Scripts task complete' }));
 });
 
 // Images

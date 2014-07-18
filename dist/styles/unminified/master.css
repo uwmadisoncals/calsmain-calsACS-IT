@@ -824,7 +824,7 @@ p {
 .home .headerContainer {
   position: relative;
   background: #960001 url("../../../dist/images/equipmentcollection2.svg") no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: 100% auto; }
 
 .headerContainer {
@@ -885,6 +885,50 @@ p {
       padding-bottom: 0.8em;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       -webkit-font-smoothing: antialiased; }
+
+.sideBarNav.navVisible {
+  display: block; }
+
+.menuTrigger, .menuTrigger:visited {
+  float: right;
+  padding: 0.6em;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .menuTrigger svg, .menuTrigger:visited svg {
+    margin-right: 4px;
+    height: 100%; }
+    .menuTrigger svg path, .menuTrigger svg rect, .menuTrigger svg circle, .menuTrigger:visited svg path, .menuTrigger:visited svg rect, .menuTrigger:visited svg circle {
+      fill: rgba(255, 255, 255, 0.8); }
+
+.menuTrigger:hover {
+  float: right;
+  padding: 0.6em;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+  .menuTrigger:hover svg {
+    margin-right: 4px;
+    height: 100%; }
+    .menuTrigger:hover svg path, .menuTrigger:hover svg rect, .menuTrigger:hover svg circle {
+      fill: rgba(255, 255, 255, 0.8); }
 
 .homePageFeature {
   padding: 2em;

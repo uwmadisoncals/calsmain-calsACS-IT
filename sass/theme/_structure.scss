@@ -11,7 +11,7 @@
 
   position: relative;
   background: $primaryHeaderBg url("../../../dist/images/equipmentcollection2.svg") no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: 100% auto;
 }
 
@@ -106,4 +106,60 @@
     }
   }
 
+}
+
+.sideBarNav.navVisible {
+  display: block;
+}
+
+.menuTrigger, .menuTrigger:visited {
+  float: right;
+  padding: 0.6em;
+  color: $white;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid rgba(255,255,255,0);
+  border-radius: 3px;
+  transition: 0.3s;
+
+  svg {
+    margin-right: 4px;
+    height: 100%;
+
+    path, rect, circle {
+      fill: rgba(255,255,255,0.8);
+    }
+  }
+}
+
+.menuTrigger:hover {
+  float: right;
+  padding: 0.6em;
+  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.8);
+
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+
+  svg {
+    margin-right: 4px;
+    height: 100%;
+
+    path, rect, circle {
+      fill: rgba(255,255,255,0.8);
+    }
+  }
 }
