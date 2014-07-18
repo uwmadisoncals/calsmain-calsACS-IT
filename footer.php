@@ -16,7 +16,7 @@
 		</div><!-- .site-info -->
 		<div class="darkband"></div>
 		<div class="contactInfo">
-		<img src="" alt="" class="logo">
+		<!-- <img src="" alt="" class="logo"> -->
 		<div class="uwaddress">
 			<h3>CALS IT ACS</h3>
 			<a href="">University of Wisconsin Madison</a>
@@ -25,7 +25,7 @@
 				<span>• Madison, WI</span>
 				<span>• 53706</span>
 			</address>
-			<div class="phone">(608)262-3193</div>
+			<div class="phone">(608) 262-3193</div>
 			<div class="links">
 				<a href="">Contact Us</a>
 				<a href="">• Accessibility</a>
@@ -35,9 +35,11 @@
 			
 		</div>
 		<div class="support">
-			
+			<h3>Did you know?</h3>
+			<p class="mission-statement">CALS it presently hosts over x sites.</p>
+			<a href="" class="button blue">Support CALS</a>
 		</div>
-
+		<div class="copyright_container"><a class="copyright_link cf" href="">©2014. Board of Regents of the University of Wisconsin System</a></div>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->

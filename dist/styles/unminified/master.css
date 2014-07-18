@@ -1065,18 +1065,55 @@ body.page.page-template-default div.site-content {
 html body.page footer#colophon.site-footer {
   width: 100%;
   background-color: #3E3938;
-  min-height: 300px; }
+  min-height: 250px; }
   html body.page footer#colophon.site-footer div.darkband {
     width: 100%;
     height: 50px;
     background-color: #CBC8B7; }
   html body.page footer#colophon.site-footer div.contactInfo {
     width: 60%;
-    float: left; }
-    html body.page footer#colophon.site-footer div.contactInfo div.uwaddress span, html body.page footer#colophon.site-footer div.contactInfo div.uwaddress a {
-      color: white; }
+    min-height: 100px;
+    float: left;
+    margin: 1.5% 0 0 1.5%;
+    line-height: 1.2em; }
+    html body.page footer#colophon.site-footer div.contactInfo div.uwaddress a {
+      color: #CBC8B7;
+      font-size: 0.8em;
+      font-weight: normal; }
+    html body.page footer#colophon.site-footer div.contactInfo div.uwaddress span, html body.page footer#colophon.site-footer div.contactInfo div.uwaddress div.phone {
+      color: white;
+      font-size: 0.8em;
+      font-weight: normal; }
     html body.page footer#colophon.site-footer div.contactInfo div.uwaddress h3 {
-      color: white; }
+      color: white;
+      font-size: 1em;
+      font-weight: normal; }
   html body.page footer#colophon.site-footer div.support {
     width: 35%;
-    float: right; }
+    float: right;
+    min-height: 100px;
+    margin-top: 1.5%;
+    line-height: 2em; }
+    html body.page footer#colophon.site-footer div.support a {
+      color: white;
+      font-size: 1em; }
+    html body.page footer#colophon.site-footer div.support h3 {
+      color: white;
+      font-size: 1em;
+      font-weight: normal; }
+    html body.page footer#colophon.site-footer div.support a.button {
+      margin-top: 1em; }
+    html body.page footer#colophon.site-footer div.support p {
+      color: white;
+      font-size: 0.8em; }
+  html body.page footer#colophon.site-footer a.copyright_link {
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    font-size: 0.7em;
+    text-decoration: none; }
+    html body.page footer#colophon.site-footer a.copyright_link:visited {
+      color: white;
+      text-decoration: none; }
+    html body.page footer#colophon.site-footer a.copyright_link:hover {
+      text-decoration: underline; }
