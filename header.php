@@ -59,7 +59,7 @@ if ( is_front_page() ) { ?>
 	<div class="homePageFeature">
 		<h2>CALS IT/ACS</h2>
 		<h2 class="subHeading">Here for you.</h2>
-		<a href="#" class="button large blue">Our Services</a>
+		<a href="/our-services/" class="button large blue">Our Services</a>
 	</div>
 
 <?php } ?>
