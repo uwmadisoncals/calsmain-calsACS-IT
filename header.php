@@ -26,9 +26,9 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>
 		</div>
-
-	<div class="siteWrapper">
 		<div class="siteWrapperOverlay"></div>
+	<div class="siteWrapper">
+
 	<div class="headerContainer">
 
 		<div id="page" class="hfeed site">

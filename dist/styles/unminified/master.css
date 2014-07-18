@@ -934,26 +934,30 @@ p {
 .siteWrapper {
   -webkit-transition: 0.4s;
   transition: 0.4s; }
-  .siteWrapper .siteWrapperOverlay {
-    background: rgba(0, 0, 0, 0);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 0%;
-    width: 0%;
-    z-index: 40;
-    -webkit-transition: background 0.4s;
-    transition: background 0.4s; }
+
+.siteWrapperOverlay {
+  background: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 0%;
+  width: 0%;
+  z-index: 40;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s; }
+
+.siteWrapperOverlay.navVisible {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s; }
 
 .siteWrapper.navVisible {
   -webkit-transform: translate3d(-40px, 0px, 0px);
   transform: translate3d(-40px, 0px, 0px);
   -webkit-filter: blur(4px);
   filter: blur(4px); }
-  .siteWrapper.navVisible .siteWrapperOverlay {
-    background: rgba(0, 0, 0, 0.3);
-    height: 100%;
-    width: 100%; }
 
 .menuTrigger, .menuTrigger:visited {
   float: right;
@@ -995,6 +999,41 @@ p {
     height: 100%; }
     .menuTrigger:hover svg path, .menuTrigger:hover svg rect, .menuTrigger:hover svg circle {
       fill: rgba(255, 255, 255, 0.8); }
+
+#site-navigation .menu ul.children {
+  display: none;
+  position: relative;
+  float: none;
+  top: 0px;
+  left: 0px;
+  padding-left: 8%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.1); }
+#site-navigation .menu .expandLink {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  z-index: 5;
+  font-size: 0px;
+  color: transparent;
+  border-bottom: none;
+  background: url("../../../dist/images/downarrow.svg") no-repeat;
+  background-size: 50% 50%;
+  background-position: center center;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s; }
+#site-navigation .menu .expandLink:hover {
+  background: url("../../../dist/images/downarrow_over.svg") no-repeat;
+  background-size: 50% 50%;
+  background-position: center center; }
+#site-navigation .menu .expandLink.expanded {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .homePageFeature {
   padding: 2em;
@@ -1052,10 +1091,10 @@ p {
     font-family: "Raleway", sans-serif;
     font-weight: 500; }
   .homeSubFeatures > div p {
-    text-align: justify;
+    text-align: center;
     line-height: 1.6;
     font-family: "Raleway", sans-serif;
-    font-weight: 100; }
+    font-weight: 300; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }
