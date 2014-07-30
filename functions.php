@@ -128,3 +128,23 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * This function gets the slug name for the post type or page
+ * @see: 
+ * @link: http://wordpress.org/support/topic/how-to-get-the-current-post-slug
+ * @param:
+ * @return:
+ */
+function get_the_slug() {
+
+global $post;
+
+if ( is_single() || is_page() ) {
+return $post->post_name;
+}
+else {
+return "";
+}
+
+}
