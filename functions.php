@@ -134,7 +134,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * @see: 
  * @link: http://wordpress.org/support/topic/how-to-get-the-current-post-slug
  * @param:
- * @return:
+ * @return  string 
  */
 function get_the_slug() {
 
