@@ -1224,23 +1224,13 @@ html body.page footer#colophon.site-footer {
       text-decoration: underline; }
 
 /* Buttons */
-button, input[type="submit"], input[type="button"], input[type="reset"], a.button {
-  background: #c93f3f;
+div.get_help_wrapper button, div.get_help_wrapper input[type="submit"], div.get_help_wrapper input[type="button"], div.get_help_wrapper input[type="reset"], div.get_help_wrapper a.button {
+  background: rgba(64, 64, 64, 0.7);
   /* Old browsers */
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c93f3f), color-stop(100%, #a01818));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #c93f3f 0%, #a01818 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: -webkit-gradient(linear, left top, left bottom, from(#c93f3f), to(#a01818));
-  background: linear-gradient(to bottom, #c93f3f 0%, #a01818 100%);
-  /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c93f3f', endColorstr='#a01818',GradientType=0 );
   /* IE6-9 */
   border: none;
-  border-bottom: 3px solid #7e1010;
+  border-bottom: none;
   border-radius: 2px;
   color: #fff;
   display: inline-block;
@@ -1249,41 +1239,19 @@ button, input[type="submit"], input[type="button"], input[type="reset"], a.butto
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: none; }
-
-button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, a.button:hover, a.button:focus {
-  background: #af3838;
+div.get_help_wrapper button:hover, div.get_help_wrapper button:focus, div.get_help_wrapper input[type="submit"]:hover, div.get_help_wrapper input[type="button"]:hover, div.get_help_wrapper input[type="reset"]:hover, div.get_help_wrapper input[type="submit"]:focus, div.get_help_wrapper input[type="button"]:focus, div.get_help_wrapper input[type="reset"]:focus, div.get_help_wrapper a.button:hover, div.get_help_wrapper a.button:focus {
+  background: #CBC8B7;
   /* Old browsers */
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #af3838), color-stop(100%, #771111));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #af3838 0%, #771111 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: -webkit-gradient(linear, left top, left bottom, from(#af3838), to(#771111));
-  background: linear-gradient(to bottom, #af3838 0%, #771111 100%);
-  /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af3838', endColorstr='#771111',GradientType=0 );
   /* IE6-9 */
-  border-bottom: 3px solid #6b0b0b;
+  border-bottom: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
-
-button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active, a.button:active {
+div.get_help_wrapper button:active, div.get_help_wrapper input[type="submit"]:active, div.get_help_wrapper input[type="button"]:active, div.get_help_wrapper input[type="reset"]:active, div.get_help_wrapper a.button:active {
   background: #af3838;
   /* Old browsers */
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #af3838), color-stop(100%, #771111));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #af3838 0%, #771111 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: -webkit-gradient(linear, left top, left bottom, from(#af3838), to(#771111));
-  background: linear-gradient(to bottom, #af3838 0%, #771111 100%);
-  /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af3838', endColorstr='#771111',GradientType=0 );
   /* IE6-9 */
   border: none;
-  border-top: 3px solid #961515;
+  border-top: none;
   padding: 10px 24px 11px; }
