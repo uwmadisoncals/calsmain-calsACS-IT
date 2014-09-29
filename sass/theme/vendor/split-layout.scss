@@ -446,17 +446,17 @@ body {
 /**
  * Additional customization to ensure that split-layout works in wordpress page
  */
-div.headerContainer{
+page.page-id-8 div.headerContainer{
 	position:fixed;
 	height:190px;
 	width:100%;
 	z-index:150;
 }
 
-.side-left {
+page.page-id-8 .side-left {
 	top:190px;
 }
 
-.side-right {
+page.page-id-8 .side-right {
 	top:190px;
 }
