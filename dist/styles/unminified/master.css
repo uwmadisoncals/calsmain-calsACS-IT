@@ -1256,23 +1256,23 @@ div.get_help_wrapper button:active, div.get_help_wrapper input[type="submit"]:ac
   border-top: none;
   padding: 10px 24px 11px; }
 
-html, body, .container {
+html, body.page-id-8, body.page-id-8 .container {
   position: relative;
   width: 100%;
   height: 100%; }
 
-body {
+body.page-id-8 {
   overflow-y: scroll;
   background: #333; }
 
-.splitlayout {
+body.page-id-8 .splitlayout {
   position: relative;
   overflow-x: hidden;
   min-height: 100%;
   width: 100%; }
 
 /* Intro sides */
-.side {
+body.page-id-8 .side {
   position: fixed;
   top: 0;
   z-index: 100;
@@ -1281,10 +1281,10 @@ body {
   text-align: center;
   -webkit-backface-visibility: hidden; }
 
-.open-left .side, .open-right .side {
+body.page-id-8 .open-left .side, body.page-id-8 .open-right .side {
   cursor: default; }
 
-.overlay {
+body.page-id-8 .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1294,20 +1294,20 @@ body {
   height: 100%;
   opacity: 0; }
 
-.side-left .overlay {
+body.page-id-8 .side-left .overlay {
   background: rgba(0, 0, 0, 0.7); }
 
-.side-right .overlay {
+body.page-id-8 .side-right .overlay {
   background: rgba(0, 0, 0, 0.3); }
 
-.side-left {
+body.page-id-8 .side-left {
   left: 0;
-  background: #960001;
+  background: #3E3938;
   color: #fff;
   outline: 1px solid #CBC8B7;
   /* avoid gap */ }
 
-.side-right {
+body.page-id-8 .side-right {
   right: 0;
   background: #fff;
   color: #960001;
@@ -1315,7 +1315,7 @@ body {
   /* avoid gap */ }
 
 /* Intro content, profile image and name, back button */
-.intro-content {
+body.page-id-8 .intro-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1326,7 +1326,7 @@ body {
   -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%); }
 
-.profile {
+body.page-id-8 .profile {
   margin: 0 auto;
   width: 140px;
   height: 140px;
@@ -1337,15 +1337,15 @@ body {
 	border-radius: 50%;
 	opacity: 0.6;
 }*/
-.intro-content h1 > span {
+body.page-id-8 .intro-content h1 > span {
   display: block;
   white-space: nowrap; }
 
-.intro-content h1 > span:first-child {
+body.page-id-8 .intro-content h1 > span:first-child {
   font-weight: 300;
   font-size: 2em; }
 
-.intro-content h1 > span:nth-child(2) {
+body.page-id-8 .intro-content h1 > span:nth-child(2) {
   position: relative;
   margin-top: 0.5em;
   padding: 0.8em;
@@ -1354,7 +1354,7 @@ body {
   font-size: 0.8em;
   font-weight: 400; }
 
-.intro-content h1 > span:nth-child(2):before {
+body.page-id-8 .intro-content h1 > span:nth-child(2):before {
   position: absolute;
   top: 0;
   left: 25%;
@@ -1363,10 +1363,10 @@ body {
   background: #fff;
   content: ''; }
 
-.side-right .intro-content h1 > span:nth-child(2):before {
+body.page-id-8 .side-right .intro-content h1 > span:nth-child(2):before {
   background: #960001; }
 
-.back {
+body.page-id-8 .back {
   position: fixed;
   top: 2.6em;
   z-index: 500;
@@ -1382,35 +1382,35 @@ body {
   opacity: 0;
   pointer-events: none; }
 
-.mobile-layout .back {
+body.page-id-8 .mobile-layout .back {
   /* fixed positioning will make this not clickable after scrolling on some mobile devices */
   position: absolute; }
 
-.back-left {
+body.page-id-8 .back-left {
   left: 12.5%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.back-right {
+body.page-id-8 .back-right {
   right: 12.5%;
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
   transform: translateX(50%);
   color: #fff; }
 
-.open-right .back-left, .open-left .back-right {
+body.page-id-8 .open-right .back-left, body.page-id-8 .open-left .back-right {
   visibility: visible;
   opacity: 1;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
   pointer-events: auto; }
 
-.back:hover {
+body.page-id-8 .back:hover {
   color: #ddd; }
 
 /* Pages */
-.page {
+body.page-id-8 .page {
   position: relative;
   top: 0;
   overflow: auto;
@@ -1420,7 +1420,7 @@ body {
   font-size: 1.4em;
   -webkit-backface-visibility: hidden; }
 
-.page-right {
+body.page-id-8 .page-right {
   left: 25%;
   outline: 5px solid #ecf0f1;
   /* avoid rounding gaps */
@@ -1430,10 +1430,10 @@ body {
   -ms-transform: translateX(100%);
   transform: translateX(100%); }
 
-.splitlayout.open-right {
+body.page-id-8 .splitlayout.open-right {
   background: #ecf0f1; }
 
-.page-left {
+body.page-id-8 .page-left {
   left: 0;
   outline: 5px solid #34495e;
   /* avoid rounding gaps */
@@ -1444,201 +1444,201 @@ body {
   -ms-transform: translateX(-100%);
   transform: translateX(-100%); }
 
-.splitlayout.open-left {
+body.page-id-8 .splitlayout.open-left {
   background: #34495e; }
 
 /* Inner page content */
-.page-inner {
+body.page-id-8 .page-inner {
   padding: 2em; }
 
-.page-inner section {
+body.page-id-8 .page-inner section {
   padding-bottom: 1em; }
 
-.page-inner h2 {
+body.page-id-8 .page-inner h2 {
   margin: 0 0 1em 0;
   font-weight: 300;
   font-size: 2.4em; }
 
-.page-inner p {
+body.page-id-8 .page-inner p {
   font-weight: 300;
   font-size: 1.2em; }
 
 /* All transitions */
-.side, .page {
+body.page-id-8 .side, body.page-id-8 .page {
   -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s; }
 
-.overlay {
+body.page-id-8 .overlay {
   -webkit-transition: opacity 0.6s, visibility 0.1s 0.6s;
   transition: opacity 0.6s, visibility 0.1s 0.6s; }
 
-.intro-content {
+body.page-id-8 .intro-content {
   -webkit-transition: -webkit-transform 0.6s, top 0.6s;
   transition: transform 0.6s, top 0.6s; }
 
-.intro-content h1, .back {
+body.page-id-8 .intro-content h1, body.page-id-8 .back {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s; }
 
 /* Open and close */
 /* We need to set the position and overflow for the respective page scroll */
-.reset-layout .page, .splitlayout.open-right .page-left, .splitlayout.open-left .page-right, .splitlayout.close-right .page-left, .splitlayout.close-left .page-right {
+body.page-id-8 .reset-layout .page, body.page-id-8 .splitlayout.open-right .page-left, body.page-id-8 .splitlayout.open-left .page-right, body.page-id-8 .splitlayout.close-right .page-left, body.page-id-8 .splitlayout.close-left .page-right {
   position: absolute;
   overflow: hidden;
   height: 100%; }
 
-.splitlayout.open-right .page-right, .splitlayout.open-left .page-left {
+body.page-id-8 .splitlayout.open-right .page-right, body.page-id-8 .splitlayout.open-left .page-left {
   position: relative;
   overflow: auto;
   height: auto; }
 
-.open-right .side-left .overlay, .open-left .side-right .overlay {
+body.page-id-8 .open-right .side-left .overlay, body.page-id-8 .open-left .side-right .overlay {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s; }
 
 /* Right side open */
-.open-right .side-left {
+body.page-id-8 .open-right .side-left {
   -webkit-transform: translateX(-60%);
   -ms-transform: translateX(-60%);
   transform: translateX(-60%); }
 
-.open-right .side-right {
+body.page-id-8 .open-right .side-right {
   z-index: 200;
   -webkit-transform: translateX(-150%);
   -ms-transform: translateX(-150%);
   transform: translateX(-150%); }
 
-.close-right .side-right {
+body.page-id-8 .close-right .side-right {
   z-index: 200; }
 
-.open-right .side-right .intro-content {
+body.page-id-8 .open-right .side-right .intro-content {
   -webkit-transform: translateY(-50%) translateX(0%) scale(0.6);
   -ms-transform: translateY(-50%) translateX(0%) scale(0.6);
   transform: translateY(-50%) translateX(0%) scale(0.6); }
 
-.open-right .page-right {
+body.page-id-8 .open-right .page-right {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%); }
 
 /* Left side open */
-.open-left .side-right {
+body.page-id-8 .open-left .side-right {
   -webkit-transform: translateX(60%);
   -ms-transform: translateX(60%);
   transform: translateX(60%); }
 
-.open-left .side-left {
+body.page-id-8 .open-left .side-left {
   z-index: 200;
   -webkit-transform: translateX(150%);
   -ms-transform: translateX(150%);
   transform: translateX(150%); }
 
-.close-left .side-left {
+body.page-id-8 .close-left .side-left {
   z-index: 200; }
 
-.open-left .side-left .intro-content {
+body.page-id-8 .open-left .side-left .intro-content {
   -webkit-transform: translateY(-50%) translateX(-100%) scale(0.6);
   -ms-transform: translateY(-50%) translateX(-100%) scale(0.6);
   transform: translateY(-50%) translateX(-100%) scale(0.6); }
 
-.open-left .codropsheader {
+body.page-id-8 .open-left .codropsheader {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s, visibility 0.1s 0.3s;
   transition: opacity 0.3s, visibility 0.1s 0.3s; }
 
-.open-left .page-left {
+body.page-id-8 .open-left .page-left {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%); }
 
 /* Media Queries */
 @media screen and (max-width: 83em) {
-  .intro-content {
+  body.page-id-8 .intro-content {
     font-size: 60%; } }
 
 @media screen and (max-width: 58em) {
-  body {
+  body.page-id-8 {
     font-size: 90%; } }
 
 @media screen and (max-width: 49.4375em) {
-  .open-right .side-right {
+  body.page-id-8 .open-right .side-right {
     -webkit-transform: translateX(-175%);
     -ms-transform: translateX(-175%);
     transform: translateX(-175%); }
-  .open-right .side-left {
+  body.page-id-8 .open-right .side-left {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%); }
-  .open-left .side-right {
+  body.page-id-8 .open-left .side-right {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%); }
-  .open-left .side-left {
+  body.page-id-8 .open-left .side-left {
     -webkit-transform: translateX(175%);
     -ms-transform: translateX(175%);
     transform: translateX(175%); }
-  .page {
+  body.page-id-8 .page {
     width: 100%; }
-  .page-right {
+  body.page-id-8 .page-right {
     left: 0;
     padding-left: 15%; }
-  .page-left {
+  body.page-id-8 .page-left {
     padding-right: 15%; }
-  .intro-content {
+  body.page-id-8 .intro-content {
     width: 100%; }
-  .open-right .side-right .intro-content {
+  body.page-id-8 .open-right .side-right .intro-content {
     top: 100%;
     -webkit-transform: translateY(-150px) translateX(-12.5%) scale(0.5);
     -ms-transform: translateY(-150px) translateX(-12.5%) scale(0.5);
     transform: translateY(-150px) translateX(-12.5%) scale(0.5); }
-  .open-left .side-left .intro-content {
+  body.page-id-8 .open-left .side-left .intro-content {
     top: 100%;
     -webkit-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
     -ms-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
     transform: translateY(-150px) translateX(-87.5%) scale(0.5); }
-  .open-right .intro-content h1, .open-left .intro-content h1 {
+  body.page-id-8 .open-right .intro-content h1, body.page-id-8 .open-left .intro-content h1 {
     opacity: 0; }
-  .back-left {
+  body.page-id-8 .back-left {
     left: 6.25%; }
-  .back-right {
+  body.page-id-8 .back-right {
     right: 6.25%; } }
 
 @media screen and (max-width: 42.5em) {
-  body {
+  body.page-id-8 {
     font-size: 80%; }
-  .intro-content {
+  body.page-id-8 .intro-content {
     font-size: 50%; } }
 
 @media screen and (max-height: 41.125em) {
-  .intro-content {
+  body.page-id-8 .intro-content {
     -webkit-transform: translateY(-25%) translateX(-50%);
     -ms-transform: translateY(-25%) translateX(-50%);
     transform: translateY(-25%) translateX(-50%); } }
 
 @media screen and (max-width: 39.375em) {
-  .intro-content .profile {
+  body.page-id-8 .intro-content .profile {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); } }
 
 @media screen and (max-width: 320px) {
-  body {
+  body.page-id-8 {
     font-size: 70%; } }
 
 /**
  * Additional customization to ensure that split-layout works in wordpress page
  */
-page.page-id-8 div.headerContainer {
+body.page-id-8 div.headerContainer {
   position: fixed;
   height: 190px;
   width: 100%;
   z-index: 150; }
 
-page.page-id-8 .side-left {
+body.page-id-8 .side-left {
   top: 190px; }
 
-page.page-id-8 .side-right {
+body.page-id-8 .side-right {
   top: 190px; }
