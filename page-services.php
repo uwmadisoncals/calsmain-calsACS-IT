@@ -39,14 +39,14 @@ get_header(); ?>
 						</header>
 						*/?>
 						<div class="intro-content">
-							<div class="profile"><img src="img/hosting.svg" alt="profile1"></div>
+							<div class="profile"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/hosting.svg" alt="profile1"></div>
 							<h1><span>CALS IT</span><span>Information Technology</span></h1>
 						</div>
 						<div class="overlay"></div>
 					</div>
 					<div class="side side-right">
 						<div class="intro-content">
-							<div class="profile"><img src="img/security.svg" alt="profile2"></div>
+							<div class="profile"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/security.svg" alt="profile2"></div>
 							<h1><span>CALS ACS</span><span>Administrative Computing Services</span></h1>
 						</div>
 						<div class="overlay"></div>
