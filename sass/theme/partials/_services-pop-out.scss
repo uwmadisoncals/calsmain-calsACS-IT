@@ -1,0 +1,22 @@
+	.no-display{
+		//height:0;
+		//-webkit-transition: opacity 1s ease-out;
+		//opacity:0;
+		display:none;
+	}
+
+	#popout-content{
+		//transition-property:display;
+		transition:1s;
+		width:100%;
+		height:100%;
+		background-color:tan;
+		top:0;
+		left:0;
+		z-index:6;
+		position:absolute;
+	}
+.popout-active{
+	//opacity:1;
+	//display:block;
+}

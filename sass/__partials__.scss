@@ -2,5 +2,6 @@
 // Include all Theme-Specific Partials (output css) //
 //////////////////////////////////////////////////////
 
-@import "theme-specific-sass/partials/_example3.scss";
-@import "theme-specific-sass/partials/_example4.scss";
+@import "theme/partials/_example3.scss";
+@import "theme/partials/_example4.scss";
+@import "theme/partials/_services-pop-out.scss";

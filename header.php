@@ -19,6 +19,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+		<div class="absoluteWrap">
+		<div id="popout-content" class="no-display"><p>paragraph</p></div>
 
 		<div class="sideBarNav">
 			<a href="#" class="sideBarClose"><?php include("dist/images/closebutton.svg"); ?> Close Menu</a>
@@ -59,14 +61,10 @@ if ( is_front_page() ) { ?>
 	<div class="homePageFeature">
 		<h2>CALS IT/ACS</h2>
 		<h2 class="subHeading">Here for you.</h2>
-		<a href="/our-services/" class="button large blue">Our Services</a>
+		<a href="#" class="button large blue servicesButton">Our Services</a>
 	</div>
 
 <?php } ?>
 
 	</div>
-
-
-
-
 	<div id="content" class="site-content">

@@ -30,9 +30,9 @@ gulp.task('styles', function() {
 });
 
 
-// Scripts
+// Scripts...
 gulp.task('scripts', function() {
-  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/modernizr.custom.js',/*'./js/classie.js'*/,'./js/CALSboilerplate_underscores_custom.js',/*'./js/cbpSplitLayout.js'*/,'./js/parallax.js','./js/menu.js'])
+  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/modernizr.custom.js',/*'./js/classie.js',*/'./js/CALSboilerplate_underscores_custom.js',/*'./js/cbpSplitLayout.js',*/'./js/parallax.js','./js/menu.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
