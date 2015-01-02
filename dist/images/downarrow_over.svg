@@ -1,5 +1,1 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-<rect fill="none" width="50" height="50"/>
-<polygon opacity="0.98" fill="#FFFFFF" points="47.2,15 45.2,12.9 25,33.1 4.8,12.9 2.8,15 25,37.2 "/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50"><path fill="none" d="M0 0h50v50h-50z"/><path opacity=".98" fill="#fff" d="M47.2 15l-2-2.1-20.2 20.2-20.2-20.2-2 2.1 22.2 22.2z"/></svg>
